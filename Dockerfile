@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy the main.py file and test files to the container
 COPY main.py .
 COPY test_compare.py .
-COPY test_div_by3_6.py .
+COPY test_div_by_3_6.py .
 COPY test_multiplication.py .
 COPY test_runner.py .
 COPY test_square.py .
