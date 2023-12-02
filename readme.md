@@ -10,7 +10,7 @@ goto github > repository startpytest > code >
 behave using docker container steps:
 john_mac@MikeMac welcome-to-docker %
 1. PC local: git clone https://github.com/anhsguy/startpytest.git
-2. cd behavedammit
+2. cd startpytest
 3. docker build -t startpytest_image .
 4. docker run startpytest_image --1.1GB
 
@@ -30,3 +30,4 @@ Steps to push local to hub:
 remove any image: docker rmi startpytest_image or anhsguy792/startpytest_image
 
 Whenever step 4, the image in the hub will be loaded to Local and showing in PC terminal (docker images) even you delete it earlier
+
