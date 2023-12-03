@@ -92,3 +92,5 @@ Steps to run the pytest codes with image 'myjenkins-blueocean:2.414.3-1' in dock
 
 The following is using 'pip install -r requirements.txt' to install python packages in Jenkinfiles
 
+4. Build 'Pytest_test' > Declarative: Checkout SCM > Checkout > Set up Python Virtual Environment >  > Run Tests > Declarative : Post Actions
+It takes about 10s to build (much faster)
