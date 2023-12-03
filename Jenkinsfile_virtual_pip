@@ -22,7 +22,16 @@ pipeline {
                     // Set up a Python virtual environment
                     sh 'python3 --version'
                     sh 'python3 -m venv ${VIRTUAL_ENV}'
-                    sh "bash -c 'source ${VIRTUAL_ENV}/bin/activate && pip install -r requirements.txt'"
+                    sh "bash -c 'source ${VIRTUAL_ENV}/bin/activate'"
+                }
+            }
+        }
+
+        stage('Install Python Packages') {
+            steps {
+                script {
+                    // Install required Python packages
+                    sh 'pip install pytest behave robotframework pandas appium-python-client selenium numpy scipy Django matplotlib'
                 }
             }
         }
