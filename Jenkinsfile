@@ -22,7 +22,7 @@ pipeline {
                     // Set up a Python virtual environment
                     sh 'python3 --version'
                     sh 'python3 -m venv ${VIRTUAL_ENV}'
-                    sh 'source ${VIRTUAL_ENV}/bin/activate'
+                    sh "bash -c 'source ${VIRTUAL_ENV}/bin/activate'"
                 }
             }
         }
