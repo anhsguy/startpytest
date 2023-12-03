@@ -20,6 +20,8 @@ pipeline {
             steps {
                 script {
                     // Set up a Python virtual environment
+                    sh 'python3 --version'
+                    sh 'apt install python3.11-venv'
                     sh 'python3 -m venv ${VIRTUAL_ENV}'
                     sh 'source ${VIRTUAL_ENV}/bin/activate'
                 }
